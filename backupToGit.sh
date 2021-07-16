@@ -9,7 +9,7 @@ tar czf deconz.tar.gz deconz/
 gpg --yes -r 89E7B23D -e node-red.tar.gz
 gpg --yes -r 89E7B23D -e deconz.tar.gz
 
-stage all changes
+# stage all changes
 git add .
 echo "Staged all files"
 
@@ -21,5 +21,5 @@ echo "Added the commit with message"
 # current_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 git push origin backup
 echo "Push changes to backup branch"
-git checkout -b main
+git checkout main
 git pull
