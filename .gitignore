@@ -2,3 +2,4 @@ deconz/*
 node-red/*
 *.tar
 *.tar.gz
+*.tar.gz.gpg
