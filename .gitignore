@@ -2,3 +2,5 @@ deconz/*
 node-red/*
 *.tar
 *.tar.gz
+*.sh
+*.yaml
