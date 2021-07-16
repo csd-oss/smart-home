@@ -4,7 +4,7 @@ git checkout -b backup
 # Archive and compress containers data
 tar czf node-red.tar.gz node-red/
 tar czf deconz.tar.gz deconz/
-# Encrypt containers data
+# Encrypt containers data. Change -r to your <key-id>
 gpg --yes -r 89E7B23D -e node-red.tar.gz
 gpg --yes -r 89E7B23D -e deconz.tar.gz
 
