@@ -23,5 +23,4 @@ git push origin backup
 echo "Push changes to backup branch"
 git checkout main
 echo "Back to main"
-git pull
-echo "Pull new changes"
+ 
