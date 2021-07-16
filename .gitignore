@@ -4,3 +4,4 @@ node-red/*
 *.tar.gz
 *.sh
 *.yaml
+*.md
