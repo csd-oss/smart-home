@@ -5,8 +5,8 @@ message=$(date '+%Y-%m-%d %H:%M:%S')
 tar czf node-red.tar.gz node-red/
 tar czf deconz.tar.gz deconz/
 # Encrypt containers data
-gpg -r 89E7B23D -e node-red.tar.gz -y
-gpg -r 89E7B23D -e deconz.tar.gz -y
+gpg -y -r 89E7B23D -e node-red.tar.gz
+gpg -y -r 89E7B23D -e deconz.tar.gz
 
 stage all changes
 git add .
@@ -19,5 +19,5 @@ echo "Added the commit with message"
 # get current branch and push
 # current_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 git push origin backup
-echo "Push changes to backupß branch"
+echo "Push changes to backup branch"
 
