@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git checkout -b backup
+git checkout backup
 # Archive and compress containers data
 tar czf node-red.tar.gz node-red/
 tar czf deconz.tar.gz deconz/
