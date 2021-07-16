@@ -1,6 +1,7 @@
 #!/bin/bash
 
 message=$(date '+%Y-%m-%d %H:%M:%S')
+git checkout -b backup
 # Archive and compress containers data
 tar czf node-red.tar.gz node-red/
 tar czf deconz.tar.gz deconz/
@@ -18,6 +19,7 @@ echo "Added the commit with message"
 
 # get current branch and push
 # current_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
-git push --set-upstream origin backup
+git push origin backup
 echo "Push changes to backup branch"
-
+git checkout -b main
+git pull
