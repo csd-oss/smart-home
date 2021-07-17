@@ -26,5 +26,6 @@ services:
     restart: always
     environment:
       - TZ=Europe/Vienna
+      - user=root
     volumes:
       - ${PWD}/node-red/data:/data
