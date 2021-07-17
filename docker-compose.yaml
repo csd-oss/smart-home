@@ -24,8 +24,8 @@ services:
     container_name: nodered
     network_mode: host
     restart: always
+    user: root
     environment:
       - TZ=Europe/Vienna
-      - user=root
     volumes:
       - ${PWD}/node-red/data:/data
