@@ -23,6 +23,15 @@ To set up backups install GPG and generate a key. You can use this <https://towa
 
 ### Automatic backups
 
+Run backup script every 2 hours, oor 7200sec
+
+```shell
+watch -n 7200 backupToGit.sh
+```
+
+TO-DO ADD DESCRIPTION FOR CRONTAB
+<https://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/>
+
 ### Restoring from back up
 
 ```shell
